@@ -9,14 +9,10 @@ import random
 luckyNum=int(input("enter the number b/w 1 - 10:"))
 randomNum=random.randint(1,10)
 print("random:",randomNum)
-# res=False
+
 while luckyNum!=randomNum:
     randomNum=random.randint(1,10)
     print("random inside loop:",randomNum)
-    # if luckyNum==randomNum:
-    #     res=True
-    # else:
-    #     res=False
-# if res:
+
 print("Matched",randomNum)
 
