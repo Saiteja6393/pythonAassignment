@@ -1,12 +1,14 @@
 '''
 Exercise 1: Generate 3 random integers between 100 and 999 which is divisible by 5
 '''
-# import random
-# digits=[]
-
-# rand=random.sample(range(100, 999, 5), 3)
-# digits.append(rand)
-# print(digits)
+import random
+def generate(digits):
+    digits=[]
+    rand=random.sample(range(100, 999, 5), 3)
+    digits.append(rand)
+    return digits
+digits=[]
+print(generate(digits))
 
 '''
 Exercise 2: Random Lottery Pick. Generate 100 random lottery tickets and pick two 
@@ -17,6 +19,7 @@ import random
 def luckyWinner(lucky):
     rand=random.sample(range(99,999),100)
     lucky=random.sample(rand,2)
+    return lucky
 lucky=[]
 print(luckyWinner(lucky))
 
